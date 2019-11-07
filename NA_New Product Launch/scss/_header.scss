@@ -1,0 +1,10 @@
+header{
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	img{
+		grid-column: 1;
+	}
+	nav{
+		grid-column: 2;
+	}
+}
