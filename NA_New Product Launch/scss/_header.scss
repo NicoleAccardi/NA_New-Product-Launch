@@ -1,10 +1,19 @@
 header{
 	display: grid;
 	grid-template-columns: 4fr 1fr;
+	padding: 2rem;
+	background-color: #325A73;
+	
 	img{
 		grid-column: 1;
 	}
+	
 	nav{
 		grid-column: 2;
+		justify-self: right;
+	}
+
+	p{
+		color: #E4E8EA;
 	}
 }
