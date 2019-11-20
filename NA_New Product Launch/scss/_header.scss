@@ -1,19 +1,27 @@
 header{
 	display: grid;
-	grid-template-columns: 4fr 1fr;
+	grid-template-columns: 1fr 8fr 1fr;
 	padding: 2rem;
 	background-color: #325A73;
 	
 	img{
 		grid-column: 1;
+		height: 120%;
+		width: 120%;
+		object-fit: cover;
+		justify-self: center;
+		align-self: center;
+		padding-left: 2rem;
 	}
 	
-	nav{
-		grid-column: 2;
+nav{
+		grid-column: 3;
 		justify-self: right;
+		align-self: center;
 	}
 
 	p{
 		color: #E4E8EA;
+		padding-right: 2rem;
 	}
 }

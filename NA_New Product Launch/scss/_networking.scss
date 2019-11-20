@@ -1,28 +1,24 @@
 .networking{
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 4fr 4fr;
+	grid-template-columns: .5fr 1fr 1fr 1fr 1fr .5fr 4fr 4fr;
 	grid-template-rows: 2fr 1fr 1fr 1fr 2fr;
 	background-color: #162C41;
 	height: 50vh;
+	margin-bottom: 4rem;
 
-	h1{
-	grid-column: 1 / span 4;
+	h2{
+	grid-column: 2 / span 4;
 	grid-row: 2;
 	align-self: center;
 	justify-self: center;
 	margin: 0;
 	color: #E4E8EA;
+	font-size: 2rem;
+	padding-bottom: 1.5rem;
+	text-align: center;
 	}
 
 	.insta{
-	grid-column: 1;
-	grid-row: 3;
-	align-self: center;
-	justify-self: center;
-	margin: 0;
-	}
-
-	.twitter{
 	grid-column: 2;
 	grid-row: 3;
 	align-self: center;
@@ -30,7 +26,7 @@
 	margin: 0;
 	}
 
-	.facebook{
+	.twitter{
 	grid-column: 3;
 	grid-row: 3;
 	align-self: center;
@@ -38,7 +34,7 @@
 	margin: 0;
 	}
 
-	.pinterest{
+	.facebook{
 	grid-column: 4;
 	grid-row: 3;
 	align-self: center;
@@ -46,25 +42,71 @@
 	margin: 0;
 	}
 
+	.pinterest{
+	grid-column: 5;
+	grid-row: 3;
+	align-self: center;
+	justify-self: center;
+	margin: 0;
+	}
+
 	.fab{
-		color: #E4E8EA;
+	color: #E4E8EA;
 	}
 
 	.p{
 	margin: 0;
 	}
 
-	h2{
-	grid-column: 1 / span 4;
+	form{
+	grid-column: 2 / span 4;
 	grid-row: 4;
 	align-self: center;
 	justify-self: center;
 	margin: 0;
-	color: #E4E8EA;
+	margin-top: 2rem;
+	}
+
+	label {
+    	font-size: 1.25rem;
+    	font-weight: 400;
+    	font-family: Montserrat;
+	}
+
+	input{
+		box-sizing: border-box;
+      	padding-top: .5rem;
+      	padding-bottom: .5rem;
+      	padding-left: .5rem;
+      	padding-right: .5rem;
+		border: none;
+		align-self: center;
+		justify-self: center;
+	}
+	
+	button{
+		background-color: #6493A7;
+		border: none;
+		padding-top: .5rem;
+		padding-bottom: .5rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		margin: 0;
+		color: #325A73;
+		font-family: Montserrat;
+		font-weight: 800;
+		font-size: 1.5rem;
+		letter-spacing: 5px;
+		text-transform: uppercase;
+	}
+	
+	button:hover{
+		background-color: #325A73;
+		color: #6493A7;
 	}
 
 	img{
-	grid-column: 5 / span 2;
+	grid-column: 7 / span 2;
 	grid-row: 1 / span 5;
 	height: 100%;
 	width: 100%;

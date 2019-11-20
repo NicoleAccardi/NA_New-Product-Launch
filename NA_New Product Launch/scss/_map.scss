@@ -1,8 +1,8 @@
 .map{
 	display: grid;
 	grid-template-columns: 1fr 3fr 1fr;
-	grid-template-rows: 2fr 1fr 1fr 1fr 2fr;
-	height: 90vh;
+	grid-template-rows: 2fr 1fr 1fr 1fr 1fr 2fr;
+	height: 110vh;
 
 	h1{
 		grid-column: 2;
@@ -10,44 +10,92 @@
 		justify-self: center;
 		align-self: center;
 		margin: 0;
-		color: #162C41;
+		color: #325A73;
+		text-align: center;
+		font-size: 3rem;
+		text-transform: uppercase;
 	}
 
-	p{
+	h3{
 		grid-column: 2;
 		grid-row: 3;
 		justify-self: center;
 		align-self: center;
 		margin: 0;
-		color: #162C41;
+		color: #325A73;
+		text-align: center;
+		font-size: 3rem;
+		text-transform: uppercase;
 	}
 
-	.button{
+	p{
 		grid-column: 2;
 		grid-row: 4;
 		justify-self: center;
 		align-self: center;
+		margin: 0;
+		color: #162C41;
+		text-align: center;
+		font-size: 1.5rem;
+	}
+
+	.button{
+		grid-column: 2;
+		grid-row: 5;
+		justify-self: center;
+		align-self: center;
 		background-color: #6493A7;
 		border: none;
-		padding-top: .5rem;
-		padding-bottom: .5rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
 		padding-left: 2rem;
 		padding-right: 2rem;
 		margin: 0;
-		// border-radius: 40%;
 		color: #325A73;
 		font-family: Montserrat;
 		font-weight: 800;
 		font-size: 2rem;
-		letter-spacing: 5px
+		letter-spacing: 5px;
+	}	
+
+	.button:hover{
+		background-color: #325A73;
+		color: #6493A7;
+		opacity: 1;
 	}
 
-	img{
+	#mapbg{
 		grid-column: 1 / span 3;
-		grid-row: 1 / span 5;
+		grid-row: 1 / span 6;
 		z-index: -5;
 		height: 100%;
 		width: 100%;
 		object-fit: cover;
 	}
+
+	#circle{
+		grid-column: 1 / span 3;
+		grid-row: 1 / span 6;
+		z-index: -1;
+		height: 95%;
+		// width: 100%;
+		object-fit: cover;
+		align-self: center;
+		justify-self: center;
+		opacity: 70%;
+		animation-name: spin;
+		animation-duration: 90s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+
+	@keyframes spin {
+	  0% {
+	    transform: rotate(0deg);
+	  }
+	  100% {
+	    transform: rotate(360deg);
+	  }
+	}
+
 }
